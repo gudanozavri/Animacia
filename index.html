@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boruto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0; 
+        }
+
+        .circle {
+            height: 120px;
+            width: 120px;  
+            background-color: orangered;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 8px 8px 3px grey;
+        }
+
+        .circle img {
+            height: 120px; 
+            width: 120px;  
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .round {
+            height: 200px; 
+            width: 200px; 
+            display: flex;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: orangered transparent;
+            border-width: 5px 5px 0 0;
+            position: absolute;
+            animation: rotate infinite linear 5s;
+        }
+
+        @keyframes rotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <img src="https://wallpapers.com/images/hd/naruto-face-2adn5eli3wup7ht5.jpg" alt="Naruto">
+    </div>
+    <div class="round"></div>
+</body>
+</html>
